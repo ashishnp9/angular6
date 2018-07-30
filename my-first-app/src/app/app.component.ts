@@ -11,35 +11,16 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular6';
-  name : string = "ashish";
-  user : User;
-  InputBox :String = "";
-  response : any;
+ 
+  homeRoute = 'home';
+  aboutRoute = "about";
 
+  routes = [
 
-  
+    {label:'Home',url:'home'},
+    {label:'About',url:'about'}
 
-  constructor(private service: WsServiceService,private http:HttpClient){
-
-    service.printlog("Hello Ashish from ws serive");
-
-    this.user = new User();
-    this.user.name = "Ashish Patel";
-    this.user.designation = "Software developer";
-    this.user.phone = [ '8460588992','8849783982' ]
-    this.user.address = "Pune";
-  }
-
-  
-  searchUser(){
-
-    this.http.get('https://api.github.com/users/'+this.InputBox)
-      .subscribe((response) => {
-            this.response = response;
-            console.log(response);
-    })
-  }
+  ];
   
   
 }
