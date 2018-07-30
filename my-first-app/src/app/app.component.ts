@@ -12,10 +12,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'Angular6';
-  name : string = "fefe";
+  name : string = "ashish";
   user : User;
   InputBox :String = "";
   response : any;
+
 
   
 
