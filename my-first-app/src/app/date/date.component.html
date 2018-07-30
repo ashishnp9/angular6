@@ -1,0 +1,25 @@
+<p>
+  {{datemessage}}
+</p>
+
+<h1>{{user.name}}</h1>
+<h1>{{user.designation}}</h1>
+
+<div style="text-align:center">
+  <p>
+<button class = "show" *ngIf="isshow" (click)="clickOnButton()">Show</button>
+<button class = "hide" *ngIf="!isshow" (click)="clickOnButton()">Hide</button>
+</div>
+
+
+<div class="address" *ngIf="!isshow">
+
+     <h1>{{user.address}}</h1>
+
+
+    <div *ngIf="user.phone.length">
+    <p *ngFor = "let numberP of user.phone"> {{numberP}} </p>
+
+    </div>
+
+</div>

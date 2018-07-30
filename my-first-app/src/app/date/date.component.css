@@ -1,0 +1,19 @@
+.show{
+    height: 30px;
+    width: 60px;
+    color: red
+}
+
+.hide{
+height: 30px;
+width: 60px;
+color: green
+}
+
+.address{
+    
+    border: 5px solid rgb(130, 125, 161);
+    margin-left: 400px;
+    margin-right: 400px; 
+    font-family: "verdana";
+}
